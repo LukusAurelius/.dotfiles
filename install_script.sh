@@ -16,7 +16,7 @@ sudo chsh -s $(which fish) luke
 
 # Install fish plugins
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
-fisher install PatrickF1/fzf.fish
+fish -c fisher install PatrickF1/fzf.fish
 
 # Install starship prompt
 curl -fsSL https://starship.rs/install.sh > ~/starship_install.sh

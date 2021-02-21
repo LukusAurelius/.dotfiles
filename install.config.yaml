@@ -17,4 +17,4 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - bash ./install.sh
+  - bash ./install_script.sh
