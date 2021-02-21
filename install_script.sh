@@ -7,7 +7,7 @@
 # Install fish and other utils
 sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt update
-sudo apt install unzip vim tmux mosh curl fish bat -y
+sudo apt install unzip vim tmux mosh curl fish bat fd-find -y
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --bin
 sudo cp ~/.fzf/bin/fzf /usr/bin/fzf
