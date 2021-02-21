@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- create:
+  - ~/.config/fish/functions
+  - ~/.config/fish/conf.d
+
+- link:
+    ~/.vimrc: .vimrc
+    ~/.config/fish/config.fish: config.fish
+    ~/.config/fish/functions/fish_ssh_agent.fish: fish_ssh_agent.fish
+    ~/.config/fish/functions/bat.fish: bat.fish
+    ~/.config/fish/functions/fd.fish: fd.fish
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - bash ./install.sh
