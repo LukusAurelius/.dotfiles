@@ -10,6 +10,7 @@ sudo apt update
 sudo apt install unzip vim tmux mosh curl fish bat -y
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --bin
+sudo cp ~/.fzf/bin/fzf /usr/bin/fzf
 
 # Set default shell to fish
 sudo chsh -s $(which fish) luke
