@@ -29,7 +29,8 @@ function fish_ssh_agent --description "Start ssh-agent if not started yet, or us
     set -l key_name lukusaurelius
     
     # Only starts ssh_agent if $key_name exists in ~/.ssh/
-    if [ not __ssh_agent_is_started ] and [ test -e ~/.ssh/$key_name ]
+    if not __ssh_agent_is_started
+        and test -e ~/.ssh/$key_name
         __ssh_agent_start
     end
  
